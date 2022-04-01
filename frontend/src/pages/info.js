@@ -8,7 +8,7 @@ function Info() {
     const [alldata, setAlldata] = useState([])
     useEffect(() => {
         // console.log("in useEffect")
-        axios.get('http://localhost:1337/api/info').then(response=>{
+        axios.get('/api/info').then(response=>{
           if (response.data.success){
             setAlldata(response.data.alldata)
             console.log("alldata:", alldata)
