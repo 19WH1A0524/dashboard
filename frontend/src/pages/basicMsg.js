@@ -7,7 +7,7 @@ function BasicMsg() {
     const [msg, setMsg] = useState('')
     useEffect(() => {
         // console.log("in useEffect")
-        axios.get('http://localhost:1337/').then(response=>{
+        axios.get('/api/').then(response=>{
           if (response.data.success)
             setMsg(response.data.msg)
           else
