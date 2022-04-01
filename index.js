@@ -45,6 +45,6 @@ app.get("/*", async (req, res) => {
     res.sendFile(process.cwd() + "/frontend/build/index.html");
 })
 
-app.listen(1337, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log("Server started on 1337")
-})
+}
