@@ -38,7 +38,7 @@ setTimeout(async()=>{
 
 }, 5000)
 
-app.get("/", (req, res)=>{
+app.get("/api/", (req, res)=>{
     res.send({success: true, msg: "Hello World"});
 })
 app.get("/*", async (req, res) => {
